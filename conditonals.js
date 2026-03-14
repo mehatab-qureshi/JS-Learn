@@ -29,8 +29,3 @@ let User = {};
 console.log(User?.city?.name);
 // console.log(User.city.name);
 
-//forEach
-let arr = [10, 20, 30];
-arr.forEach((n,k,a) => {
-  console.log(k,n,a);
-});
