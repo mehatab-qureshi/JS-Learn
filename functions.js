@@ -57,6 +57,17 @@ function addition(x, y) {
 
 console.log(calculate(2, 3, addition));
 
+//HIGHER ORDER Function  (jo functn dusre functn ko arg me leta h ya return krta)
+function greeting() {
+  console.log("Higher order function");
+}
+
+function execute(fn) {
+  fn();
+}
+
+execute(greeting);  //here execute = higher order functn & greeting is callback
+
 //Closure (inner fnctn apne parent fnctn ke varible ko yaad rhkta/data store rhkta)
 function outer() {
   let count = 0;
@@ -73,25 +84,25 @@ fn();
 fn();
 
 //real life example (counter)
-function counter(){
+function counter() {
   let count = 0;
 
-  return function(){
+  return function () {
     count++;
     return count;
-  }
+  };
 }
 let c = counter();
-console.log("counter",c())
-console.log("counter",c())
+console.log("counter", c());
+console.log("counter", c());
 
 //Data hide karne ke liye (like private variable)
-function bank(){
+function bank() {
   let balance = 1000;
 
-  return function(){
+  return function () {
     return balance;
-  }
+  };
 }
 
 let check = bank();
