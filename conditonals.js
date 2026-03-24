@@ -19,8 +19,9 @@ let username = null;
 console.log(username ?? "Guest");
 
 let value = "";
-console.log(value || "Hii");
-console.log(value ?? "Hii");
+console.log(value || "Hoo");
+console.log(value ?? "Hohoo");
+console.log(value && "Hoho000o");
 
 console.log(0 ?? "falsy treat nhi krta!");
 
@@ -28,4 +29,3 @@ console.log(0 ?? "falsy treat nhi krta!");
 let User = {};
 console.log(User?.city?.name);
 // console.log(User.city.name);
-

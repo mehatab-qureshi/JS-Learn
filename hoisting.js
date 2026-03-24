@@ -24,3 +24,26 @@ if (a == undefined) {
 }
 
 let a = 20;
+
+//Call Stack
+function a(){
+   b();
+}
+
+function b(){
+   c();
+}
+
+function c(){
+   console.log("Done");
+}
+
+a();
+
+
+//interview
+for(var i=0;i<3;i++){
+   setTimeout(()=>{
+      console.log(i);
+   },1000)
+}

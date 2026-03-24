@@ -84,3 +84,5 @@ console.log(a == b); //true Kyuki dono same memory reference point kar rahe hain
 //Primitive types:value compare hota hai Objects n Arrays:reference compare hota hai
 
 console.log([] == ![]);
+
+//need to solves still more
